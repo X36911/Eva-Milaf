@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qui Sommes-Nous - Eva Milaf</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            500: '#F2750B',
+                        },
+                        secondary: {
+                            500: '#0ea5e9',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="dark:bg-gray-900 dark:text-white transition-colors duration-300">
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    
+    <custom-navbar></custom-navbar>
+
+    <!-- About Hero -->
+    <section class="relative py-20 bg-gradient-to-br from-gray-900 via-primary-500/20 to-secondary-500/10">
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="relative z-10 max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 gradient-text">Qui Sommes-Nous</h1>
+            <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
+                Découvrez l'équipe passionnée qui transforme vos rêves de voyage en réalité
+            </p>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-20 bg-gray-50 dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">Notre Équipe d'Experts</h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300">
+                    Des professionnels dévoués à votre satisfaction
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Employee 1 -->
+                <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover-lift">
+                    <img src="" alt="Nom-Prenom" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Nom-Prenom</h3>
+                        <p class="text-primary-500 font-semibold mt-2">Directrice des Opérations</p>
+                        <p class="text-gray-600 dark:text-gray-300 mt-4">
+                            Avec 15 ans d'expérience dans le tourisme de luxe, Marie assure l'excellence de chaque voyage.
+                        </p>
+                        <div class="flex gap-3 mt-4">
+                            <a href="#" class="text-secondary-500 hover:text-secondary-600">
+                                <i data-feather="linkedin"></i>
+                            </a>
+                            <a href="#" class="text-gray-500 hover:text-gray-600">
+                                <i data-feather="mail"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Employee 2 -->
+                <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover-lift">
+                    <img src="" alt="Nom-Prenom" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Nom-Prenom</h3>
+                        <p class="text-primary-500 font-semibold mt-2">Expert Destinations</p>
+                        <p class="text-gray-600 dark:text-gray-300 mt-4">
+                            Jean a visité plus de 80 pays et partage sa passion pour les cultures du monde entier.
+                        </p>
+                        <div class="flex gap-3 mt-4">
+                            <a href="#" class="text-secondary-500 hover:text-secondary-600">
+                                <i data-feather="linkedin"></i>
+                            </a>
+                            <a href="#" class="text-gray-500 hover:text-gray-600">
+                                <i data-feather="mail"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Employee 3 -->
+                <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover-lift">
+                    <img src="" alt="Ettih Sidahmed" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Ettih Sidahmed</h3>
+                        <p class="text-primary-500 font-semibold mt-2">UI/UX et Web Dev</p>
+                        <p class="text-gray-600 dark:text-gray-300 mt-4">
+                            Aïcha veille à ce que chaque client bénéficie d'un service personnalisé et attentionné.
+                        </p>
+                        <div class="flex gap-3 mt-4">
+                            <a href="#" class="text-secondary-500 hover:text-secondary-600">
+                                <i data-feather="linkedin"></i>
+                            </a>
+                            <a href="#" class="text-gray-500 hover:text-gray-600">
+                                <i data-feather="mail"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Values -->
+    <section class="py-20 bg-white dark:bg-gray-900">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-6">Notre Mission</h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 mb-6">
+                        Chez Eva Milaf, nous croyons que chaque voyage doit être une expérience transformative. 
+                        Notre mission est de créer des souvenirs inoubliables en combinant luxe, authenticité 
+                        et service exceptionnel.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <i data-feather="check-circle" class="w-6 h-6 text-green-500"></i>
+                            <span class="text-gray-700 dark:text-gray-300">Voyages sur mesure adaptés à vos désirs</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-feather="check-circle" class="w-6 h-6 text-green-500"></i>
+                            <span class="text-gray-700 dark:text-gray-300">Partenariats exclusifs avec les meilleurs prestataires</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-feather="check-circle" class="w-6 h-6 text-green-500"></i>
+                            <span class="text-gray-700 dark:text-gray-300">Assistance 24h/24 pendant votre séjour</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="http://static.photos/travel/640x360/5" alt="Notre Mission" class="rounded-2xl shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

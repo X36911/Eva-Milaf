@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offres & Voyages - Eva Milaf</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            500: '#F2750B',
+                        },
+                        secondary: {
+                            500: '#0ea5e9',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="dark:bg-gray-900 dark:text-white transition-colors duration-300">
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    
+    <custom-navbar></custom-navbar>
+
+    <!-- Offers Hero -->
+    <section class="relative py-20 bg-gradient-to-br from-gray-900 via-primary-500/20 to-secondary-500/10">
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="relative z-10 max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 gradient-text">Nos Offres & Voyages</h1>
+            <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
+                Découvrez notre sélection exclusive de voyages d'exception autour du monde
+            </p>
+        </div>
+    </section>
+
+    <!-- Offers Filter -->
+    <section class="py-12 bg-gray-100 dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-wrap gap-4 justify-center">
+                <button class="bg-primary-500 text-white px-6 py-3 rounded-xl font-semibold">Tous les voyages</button>
+                <button class="bg-white dark:bg-gray-700 text-gray-700 dark:text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 dark:hover:bg-gray-600">Luxe</button>
+                <button class="bg-white dark:bg-gray-700 text-gray-700 dark:text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 dark:hover:bg-gray-600">Aventure</button>
+                <button class="bg-white dark:bg-gray-700 text-gray-700 dark:text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 dark:hover:bg-gray-600">Romantique</button>
+                <button class="bg-white dark:bg-gray-700 text-gray-700 dark:text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 dark:hover:bg-gray-600">Familial</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Grid -->
+    <section class="py-20 bg-white dark:bg-gray-900">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Offer 1 -->
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden hover-lift">
+                    <div class="relative">
+                        <img src="http://static.photos/travel/640x360/6" alt="Maldives" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            -15%
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Paradis aux Maldives</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">7 nuits en villa sur pilotis avec spa inclus</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-2xl font-bold text-primary-500">4.500.000 FCFA</span>
+                            <span class="text-gray-500 line-through">5.300.000 DZD</span>
+                        </div>
+                        <button class="w-full bg-secondary-500 text-white py-3 rounded-xl font-semibold hover:bg-secondary-600 transition-colors">
+                            Voir les détails
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Offer 2 -->
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden hover-lift">
+                    <img src="http://static.photos/travel/640x360/7" alt="Tokyo" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Aventure à Tokyo</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">10 jours d'immersion culturelle japonaise</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-2xl font-bold text-primary-500">3.800.000 DZD</span>
+                        </div>
+                        <button class="w-full bg-secondary-500 text-white py-3 rounded-xl font-semibold hover:bg-secondary-600 transition-colors">
+                            Voir les détails
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Offer 3 -->
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden hover-lift">
+                    <img src="http://static.photos/travel/640x360/8" alt="Safari" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Safari en Afrique du Sud</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Observation des Big 5 en lodge de luxe</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-2xl font-bold text-primary-500">5.200.000 DZD</span>
+                        </div>
+                        <button class="w-full bg-secondary-500 text-white py-3 rounded-xl font-semibold hover:bg-secondary-600 transition-colors">
+                            Voir les détails
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Offer 4 -->
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden hover-lift">
+                    <img src="http://static.photos/travel/640x360/9" alt="New York" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">New York City Break</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">5 jours dans la ville qui ne dort jamais</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-2xl font-bold text-primary-500">2.900.000 DZD</span>
+                        </div>
+                        <button class="w-full bg-secondary-500 text-white py-3 rounded-xl font-semibold hover:bg-secondary-600 transition-colors">
+                            Voir les détails
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Offer 5 -->
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden hover-lift">
+                    <img src="http://static.photos/travel/640x360/10" alt="Thaïlande" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Détente en Thaïlande</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Retraite bien-être dans les îles paradisiaques</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-2xl font-bold text-primary-500">3.500.000 DZD</span>
+                        </div>
+                        <button class="w-full bg-secondary-500 text-white py-3 rounded-xl font-semibold hover:bg-secondary-600 transition-colors">
+                            Voir les détails
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Offer 6 -->
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden hover-lift">
+                    <div class="relative">
+                        <img src="http://static.photos/travel/640x360/11" alt="Istanbul" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Nouveau
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Mystères d'Istanbul</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Voyage culturel entre Orient et Occident</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-2xl font-bold text-primary-500">2.600.000 DZD</span>
+                        </div>
+                        <button class="w-full bg-secondary-500 text-white py-3 rounded-xl font-semibold hover:bg-secondary-600 transition-colors">
+                            Voir les détails
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

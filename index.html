@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eva Milaf - Voyages d'Exception</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            500: '#F2750B',
+                        },
+                        secondary: {
+                            500: '#0ea5e9',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="dark:bg-gray-900 dark:text-white transition-colors duration-300">
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    
+    <custom-navbar></custom-navbar>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-primary-500/20 to-secondary-500/10 dark:from-gray-900 dark:via-primary-500/10 dark:to-secondary-500/5 overflow-hidden">
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="relative z-10 text-center px-4 max-w-6xl mx-auto">
+            <div class="mb-8">
+                <img src="logo.jpg" alt="Eva Milaf Logo" class="mx-auto w-48 h-48 rounded-full object-cover border-4 border-white/20 shadow-2xl">
+                <h1 class="text-5xl md:text-7xl font-bold mt-6 bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent">
+                    Eva Milaf
+                </h1>
+                <p class="text-xl md:text-2xl mt-4 text-gray-300 max-w-3xl mx-auto">
+                    Voyages d'exception où l'élégance rencontre l'aventure
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6 mt-12">
+                <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20">
+                    <i data-feather="compass" class="w-12 h-12 text-primary-500 mx-auto"></i>
+                    <h3 class="text-xl font-semibold mt-4">Exploration Unique</h3>
+                    <p class="text-gray-300 mt-2">Découvrez des destinations rares et authentiques</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20">
+                    <i data-feather="star" class="w-12 h-12 text-secondary-500 mx-auto"></i>
+                    <h3 class="text-xl font-semibold mt-4">Service Premium</h3>
+                    <p class="text-gray-300 mt-2">Un accompagnement personnalisé de qualité</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20">
+                    <i data-feather="shield" class="w-12 h-12 text-amber-400 mx-auto"></i>
+                    <h3 class="text-xl font-semibold mt-4">Sécurité Totale</h3>
+                    <p class="text-gray-300 mt-2">Voyagez l'esprit tranquille avec notre garantie</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Umrah/Hajj Offer -->
+    <section class="py-20 bg-gradient-to-r from-amber-500/10 to-orange-500/10 dark:from-amber-500/5 dark:to-orange-500/5">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent">
+                    Offre Spéciale Omra & Hajj
+                </h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 mt-4">Vivez votre pèlerinage en toute sérénité</p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-2xl p-8 max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <img src="" alt="Omra Hajj" class="rounded-2xl shadow-lg">
+                    </div>
+                    <div>
+                        <div class="bg-green-500/20 border border-green-500/30 rounded-xl p-4 mb-6">
+                            <h3 class="text-2xl font-bold text-green-400">💰 Paiement en 10 Mensualités</h3>
+                            <p class="text-green-300 mt-2">10 millions d'avance, le reste étalé sur 10 mois</p>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-3">
+                                <i data-feather="check-circle" class="w-6 h-6 text-green-500"></i>
+                                <span class="text-lg">✅ 0% d'intérêt</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-feather="check-circle" class="w-6 h-6 text-green-500"></i>
+                                <span class="text-lg">🕌 Voyage complet inclus</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-feather="check-circle" class="w-6 h-6 text-green-500"></i>
+                                <span class="text-lg">🏨 Hôtels 5 étoiles</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-feather="check-circle" class="w-6 h-6 text-green-500"></i>
+                                <span class="text-lg">📞 Assistance 24h/24</span>
+                            </div>
+                        </div>
+
+                        <button class="mt-6 bg-gradient-to-r from-amber-500 to-orange-500 text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                            Réserver Maintenant
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers & Trips -->
+    <section class="py-20 bg-gray-50 dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 dark:text-white">Nos Offres & Voyages</h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 mt-4">Des expériences uniques soigneusement sélectionnées</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Trip 1 -->
+                <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="http://static.photos/travel/640x360/2" alt="Dubaï" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Week-end Luxe à Dubaï</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Découverte des perles du Golfe</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-primary-500">2.500.000 DZD</span>
+                            <button class="bg-secondary-500 text-white px-4 py-2 rounded-lg hover:bg-secondary-600 transition-colors">
+                                Contactez
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trip 2 -->
+                <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="http://static.photos/travel/640x360/3" alt="Paris" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Romance à Paris</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">La ville lumière comme jamais vue</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-primary-500">1.800.000 DZD</span>
+                            <button class="bg-secondary-500 text-white px-4 py-2 rounded-lg hover:bg-secondary-600 transition-colors">
+                                Contactez
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trip 3 -->
+                <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="http://static.photos/travel/640x360/4" alt="Bali" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Retraite à Bali</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Détente et bien-être absolu</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-primary-500">3.200.000 DZD</span>
+                            <button class="bg-secondary-500 text-white px-4 py-2 rounded-lg hover:bg-secondary-600 transition-colors">
+                                Contactez
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script></body>
+</html>
